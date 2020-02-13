@@ -1,0 +1,4 @@
+gcc -Wall Space.c genann.c list.c  -o Space
+gcc -Wall -fPIC -shared Space.c list.c genann.c -o Space.so
+
+gcc -Wall -fPIC -shared src/Space.c src/list.c src/genann.c -o src/Space.so
